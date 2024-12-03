@@ -5,9 +5,10 @@ import com.phoneBook.dto.UserDto;
 import com.phoneBook.entity.User;
 import com.phoneBook.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+@Service
 public class RegisterServiceImpl implements RegisterService{
     @Autowired
     UserRepository userRepository;

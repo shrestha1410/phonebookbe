@@ -17,7 +17,7 @@ public class RegisterController {
     }
     @GetMapping("/getUser/{id}")
     public UserDto getUserDetailsById(@PathVariable Long id){
-        registerService.getUser(id);
+        return registerService.getUser(id);
     }
 
 }

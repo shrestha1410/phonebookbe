@@ -19,6 +19,7 @@ public class User extends  CommonUserDetails{
     private Long id;
     @Column(name="password")
     private String password;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private List<FamilyAndFriends> familyAndFriend;
 }
