@@ -34,3 +34,10 @@ build/
 .gitattributes
 mvnw
 mvnw.cmd
+
+vcs.xml
+workspace.xml
+phonebookbe.iml
+modules.xml
+misc.xml
+
