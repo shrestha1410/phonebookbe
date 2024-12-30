@@ -31,7 +31,8 @@ public class FamilyAndFriendsServiceImpl implements FamilyAndFriendsService{
                             .firstName(fnf.getFirstName())
                             .lastName(fnf.getLastName())
                             .mobileNumber(fnf.getMobileNumber())
-                            .pinCode(fnf.getPinCode())
+                            .addressLine1(fnf.getAddressLine1())
+                            .addressLine2(fnf.getAddressLine2())
                             .build();
                     familyAndFriendsDtoList.add(familyAndFriendsDto);
                 }
@@ -49,7 +50,8 @@ public class FamilyAndFriendsServiceImpl implements FamilyAndFriendsService{
                    .firstName(familyAndFriendsRequestDto.getFirstName())
                    .lastName(familyAndFriendsRequestDto.getLastName())
                    .mobileNumber(familyAndFriendsRequestDto.getMobileNumber())
-                   .pinCode(familyAndFriendsRequestDto.getPinCode())
+                   .addressLine1(familyAndFriendsRequestDto.getAddressLine1())
+                   .addressLine2(familyAndFriendsRequestDto.getAddressLine2())
                    .build();
         FamilyAndFriends familyAndFriends1New= familyAndFriendsRepository.save(familyAndFriends);
         return familyAndFriends1New.getId();

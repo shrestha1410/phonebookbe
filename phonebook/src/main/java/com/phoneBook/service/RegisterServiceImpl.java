@@ -19,7 +19,8 @@ public class RegisterServiceImpl implements RegisterService{
                 .lastName(registerUser.getLastName())
                 .mobileNumber(registerUser.getMobileNumber())
                 .password(registerUser.getPassword())
-                .pinCode(registerUser.getPinCode())
+                .addressLine1(registerUser.getAddressLine1())
+                .addressLine2(registerUser.getAddressLine2())
                 .build();
         User user=userRepository.save(newUser);
         return  user.getId();

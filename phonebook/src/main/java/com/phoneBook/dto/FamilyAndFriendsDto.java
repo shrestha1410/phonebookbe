@@ -1,8 +1,5 @@
 package com.phoneBook.dto;
-
-import jakarta.persistence.Column;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,6 +10,7 @@ public class FamilyAndFriendsDto {
     private Long id;
     private String firstName;
     private String lastName;
-    private String mobileNumber;
-    private String pinCode;
+    private Long mobileNumber;
+    private String addressLine1;
+    private String addressLine2;
 }

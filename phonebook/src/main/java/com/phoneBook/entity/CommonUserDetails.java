@@ -17,7 +17,9 @@ public class CommonUserDetails {
     @Column(name = "last_name")
     private String lastName;
     @Column(name = "mobile_number")
-    private String mobileNumber;
-    @Column(name = "pincode")
-    private String pinCode;
+    private Long mobileNumber;
+    @Column(name = "address_line1")
+    private String addressLine1;
+    @Column(name = "address_line2")
+    private String addressLine2;
 }

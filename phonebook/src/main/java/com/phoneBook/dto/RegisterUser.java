@@ -10,8 +10,8 @@ import lombok.*;
 public class RegisterUser {
     private String firstName;
     private String lastName;
-    private String mobileNumber;
+    private Long mobileNumber;
     private String password;
-    private String pinCode;
-
+    private String addressLine1;
+    private String addressLine2;
 }

@@ -8,6 +8,6 @@ import lombok.*;
 @Getter
 @Setter
 public class LoginRequest {
-    private String mobileNumber;
+    private Long mobileNumber;
     private String password;
 }
